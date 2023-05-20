@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import Logo from "../../../public/portfoliopicture.webp"
 export default function AboutSection(){
@@ -5,7 +6,8 @@ export default function AboutSection(){
         <div className="ml-4 mt-4 w-full">
         <h1 className="text-center text-2xl text-black bg-gradient-to-r from-slate-600 via-slate-300 to-gray-500 mb-2 mr-4 rounded-lg shadow-lg shadow-slate-200 font-SFMono-Regular font-light leading-loose tracking-wide">Looking for Network Engineer? let me introduce myself</h1>
         <div className="flex w-full">
-        <Image src={Logo} alt="faysal Mahmud" className="float-left h-96 w-96 rounded-md mt-12 "/>
+        <Image src={Logo} alt="faysal Mahmud" className="float-left rounded-md mt-12 w-full h-96"/>
+        
         <p className="clear-right text-xl text-gray-600 ml-2 mr-2 border border-slate-300 shadow-xl p-2 rounded-md">I am a detail-oriented individual with a passion for technology and a strong work ethic. Over the years, I have gained extensive experience in the field of computer hardware and software. As a Computer Administrative Support, I provided technical support to clients and helped them troubleshoot issues with their desktop and laptop computers. Additionally, I assembled custom-built computers and configured operating systems and other software applications to meet the needs of my clients.<br />
 
         I am proficient in several programming languages including Python, HTML, and CSS, and I have experience working with databases using MYSQL. I am also skilled in Microsoft Office and Microsoft Azure, which allows me to provide a wide range of services to clients.<br />

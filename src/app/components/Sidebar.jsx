@@ -1,7 +1,6 @@
 "use client"
 import React, { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from 'next/navigation';
 import { FcLeft, FcVoicePresentation, FcHome, FcAddressBook, FcViewDetails, FcServices, FcDiploma1, FcEngineering, FcSearch } from "react-icons/fc";
 import logo from "../../../public/logo.jpg"
@@ -35,7 +34,7 @@ export default function Navigation(){
                         </span>
                     </Link>
 
-                    <Link href={'/'} className='text-gray-300 text-sm flex items-center gap-x-4 p-2 hover:bg-ternary/40 rounded-md mt-2 hover:bg-slate-500'>
+                    <Link href={'/educationPage'} className='text-gray-300 text-sm flex items-center gap-x-4 p-2 hover:bg-ternary/40 rounded-md mt-2 hover:bg-slate-500'>
                         <span className='text-2xl block float-left'>
                         <FcAddressBook />
                         </span>
@@ -44,7 +43,7 @@ export default function Navigation(){
                         </span>
                     </Link>
 
-                    <Link href={'/'} className='text-gray-300 text-sm flex items-center gap-x-4 p-2 hover:bg-ternary/40 rounded-md mt-2 hover:bg-slate-500'>
+                    <Link href={'/skillsPage'} className='text-gray-300 text-sm flex items-center gap-x-4 p-2 hover:bg-ternary/40 rounded-md mt-2 hover:bg-slate-500'>
                         <span className='text-2xl block float-left'>
                         <FcServices />
                         </span>
@@ -53,7 +52,7 @@ export default function Navigation(){
                         </span>
                     </Link>
 
-                    <Link href={'/'} className='text-gray-300 text-sm flex items-center gap-x-4 p-2 hover:bg-ternary/40 rounded-md mt-2 hover:bg-slate-500'>
+                    <Link href={'/projectsPage'} className='text-gray-300 text-sm flex items-center gap-x-4 p-2 hover:bg-ternary/40 rounded-md mt-2 hover:bg-slate-500'>
                         <span className='text-2xl block float-left'>
                         <FcViewDetails />
                         </span>
@@ -62,7 +61,7 @@ export default function Navigation(){
                         </span>
                     </Link>
 
-                    <Link href={'/'} className='text-gray-300 text-sm flex items-center gap-x-4 p-2 hover:bg-ternary/40 rounded-md mt-2 hover:bg-slate-500'>
+                    <Link href={'/certificationsPage'} className='text-gray-300 text-sm flex items-center gap-x-4 p-2 hover:bg-ternary/40 rounded-md mt-2 hover:bg-slate-500'>
                         <span className='text-2xl block float-left'>
                         <FcDiploma1 />
                         </span>
@@ -71,7 +70,7 @@ export default function Navigation(){
                         </span>
                     </Link>
 
-                    <Link href={'/'} className='text-gray-300 text-sm flex items-center gap-x-4 p-2 hover:bg-ternary/40 rounded-md mt-2 hover:bg-slate-500'>
+                    <Link href={'/specializationPage'} className='text-gray-300 text-sm flex items-center gap-x-4 p-2 hover:bg-ternary/40 rounded-md mt-2 hover:bg-slate-500'>
                         <span className='text-2xl block float-left'>
                         <FcEngineering />
                         </span>
