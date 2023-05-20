@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
 import { FcLeft, FcVoicePresentation, FcHome, FcAddressBook, FcViewDetails, FcServices, FcDiploma1, FcEngineering, FcSearch } from "react-icons/fc";
-import logo from "../../../public/logo.jpg"
 export default function Navigation(){
     const [open, setOpen] = useState(true);
     const router = usePathname();
@@ -25,7 +24,7 @@ export default function Navigation(){
                         <input disabled type='text' placeholder='Network Engineer' className={`bg-transparent w-full text-white focus:outline-none ${!open && 'hidden'}`}></input>
                     </div>
 
-                    <Link href={'/'} className='text-gray-300 text-sm flex items-center gap-x-4 p-2 hover:bg-ternary/40 rounded-md mt-2 hover:bg-slate-500'>
+                    <Link href={'/'} className={router === '/' ? 'activeNav' : 'inactiveNav'}>
                         <span className='text-2xl block float-left'>
                         <FcHome />
                         </span>
@@ -34,7 +33,7 @@ export default function Navigation(){
                         </span>
                     </Link>
 
-                    <Link href={'/educationPage'} className='text-gray-300 text-sm flex items-center gap-x-4 p-2 hover:bg-ternary/40 rounded-md mt-2 hover:bg-slate-500'>
+                    <Link href={'/educationPage'} className={router === '/educationPage' ? 'activeNav' : 'inactiveNav'}>
                         <span className='text-2xl block float-left'>
                         <FcAddressBook />
                         </span>
@@ -43,7 +42,7 @@ export default function Navigation(){
                         </span>
                     </Link>
 
-                    <Link href={'/skillsPage'} className='text-gray-300 text-sm flex items-center gap-x-4 p-2 hover:bg-ternary/40 rounded-md mt-2 hover:bg-slate-500'>
+                    <Link href={'/skillsPage'} className={router === '/skillsPage' ? 'activeNav' : 'inactiveNav'}>
                         <span className='text-2xl block float-left'>
                         <FcServices />
                         </span>
@@ -52,7 +51,7 @@ export default function Navigation(){
                         </span>
                     </Link>
 
-                    <Link href={'/projectsPage'} className='text-gray-300 text-sm flex items-center gap-x-4 p-2 hover:bg-ternary/40 rounded-md mt-2 hover:bg-slate-500'>
+                    <Link href={'/projectsPage'} className={router === '/projectsPage' ? 'activeNav' : 'inactiveNav'}>
                         <span className='text-2xl block float-left'>
                         <FcViewDetails />
                         </span>
@@ -61,7 +60,7 @@ export default function Navigation(){
                         </span>
                     </Link>
 
-                    <Link href={'/certificationsPage'} className='text-gray-300 text-sm flex items-center gap-x-4 p-2 hover:bg-ternary/40 rounded-md mt-2 hover:bg-slate-500'>
+                    <Link href={'/certificationsPage'} className={router === '/certificationsPage' ? 'activeNav' : 'inactiveNav'}>
                         <span className='text-2xl block float-left'>
                         <FcDiploma1 />
                         </span>
@@ -70,7 +69,7 @@ export default function Navigation(){
                         </span>
                     </Link>
 
-                    <Link href={'/specializationPage'} className='text-gray-300 text-sm flex items-center gap-x-4 p-2 hover:bg-ternary/40 rounded-md mt-2 hover:bg-slate-500'>
+                    <Link href={'/specializationPage'} className={router === '/specializationPage' ? 'activeNav' : 'inactiveNav'}>
                         <span className='text-2xl block float-left'>
                         <FcEngineering />
                         </span>
@@ -78,7 +77,7 @@ export default function Navigation(){
                         Specialization
                         </span>
                     </Link>
-
+                    
                 </div>
             </nav>
         </aside>
