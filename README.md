@@ -2,17 +2,23 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+1. Clone this repository
+2. Make sure [Node](https://nodejs.org/en/) is installed
+3. cd into the project
+4.  Open your project and install the dependencies
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+   ```bash
+   pnpm install
+   ```
+5. Start the development server to view the results
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```bash
+   pnpm run dev
+   ```
+6. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+7.go to src/app to fint the page you desire to edit.
+
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
